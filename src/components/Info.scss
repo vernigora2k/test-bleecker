@@ -1,0 +1,258 @@
+.Info {
+    display: flex;
+    justify-content: center; 
+    color: white;
+    padding-top: 50px;
+    width: 1440px;
+    background-color: white;
+}
+ 
+.Info__shell {
+    width: 1110px;
+    position: relative;
+}
+
+.Info__contant {
+    display: flex;
+    position: relative;
+}
+    
+.Info__banner {
+    width: 830px;
+    height: 540px;
+    background-repeat: no-repeat;
+    background: url('../images/info-banner.png'); 
+    position: relative;
+    left: -165px;
+}
+
+.Info__article {
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    width: 630px;
+    height: 460px;
+    background-color: #F3F7FC;
+}
+
+.Info__title {
+    color: #040F0F;
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+.Info__description {
+    color: #4F5757;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+.Info__button {
+    border: none;
+    outline: none;
+    background: none;
+    width: 215px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 18px;
+    padding-left: 27px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #135DBC;
+    background-image: url('../images/info-arrow.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-y: 15px;
+    background-position-x: 160px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Info__adit {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.Info__important {
+    width: 555px;
+    height: 175px;
+    color: #040F0F;
+    margin-top: 25px;
+}
+
+.important__title {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.important__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 110px;
+}
+
+.important__item {
+    width: 210px;
+    height: 40px;
+    padding-left: 45px;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+}
+
+.important__item:nth-child(1):before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    left: -10px;
+    bottom: -5px;
+    width: 50px ;
+    height: 50px ;
+    background: url('../images/info-shopping-cart.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.important__item:nth-child(2):before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    left: -10px;
+    bottom: -5px;
+    width: 50px ;
+    height: 50px ;
+    background: url('../images/info-price-tag.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.important__item:nth-child(3):before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    left: -10px;
+    bottom: -5px;
+    width: 50px ;
+    height: 50px ;
+    background: url('../images/info-add.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.important__item:nth-child(4):before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    left: -10px;
+    bottom: -5px;
+    width: 50px ;
+    height: 50px ;
+    background: url('../images/info-shield.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+.Info__order {
+    width: 520px;
+    height: 155px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.order__title {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #040F0F;
+    margin-bottom: 15px;
+}
+
+.Info__order ul {
+    color: #4F5757;
+    font-size: 16px;
+    line-height: 40px;
+    font-family: Roboto;
+}
+
+.Info__order span {
+    text-decoration: underline;
+    color: #135DBC;
+}
+ 
+@media all and (max-width: 1460px) {
+    .Info {
+        width: 400px;
+    }
+
+    .Info__shell {
+        width: 400px;
+    }
+
+    .Info__banner {
+        display: none;
+    }
+
+    .Info__article {
+        top: -20px;
+        width: 400px;
+    }
+
+    .Info__title {
+        font-size: 13px;
+    }
+
+    .Info__description {
+        font-size: 9px;
+    }
+
+    .Info__button {
+        font-size: 13px;
+    }
+
+    .Info__important {
+        width: 400px;
+    }
+
+    .important__title {
+        font-size: 13px;
+        margin-left: 50px;
+    }
+
+    .important__item {
+        width: 350px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .Info__adit {
+        margin-top: 400px;
+        flex-direction: column;
+    }
+
+    .Info__order {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .Info__order li {
+        font-size: 13px;
+    }
+
+    .order__title {
+        font-size: 13px;
+        margin-left: 50px;
+    }
+}

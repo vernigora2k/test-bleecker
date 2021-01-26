@@ -1,0 +1,104 @@
+.MainBanner {
+   display: flex;
+   justify-content: center; 
+   color: white;
+   padding-top: 20px;
+   width: 1440px;
+   background-color: white;
+   padding-bottom: 20px;
+}
+
+.MainBanner__shell {
+    width: 1110px;
+    height: 280px;
+    background: url('../images/MainBanner_bg1.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.MainBanner__contant {
+    width: 1110px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 60px;
+    background: url('../images/MainBanner_bg2.png') no-repeat right;
+}
+
+.MainBanner__caption {
+    width: 585px;
+    height: 90px;
+    font-size: 23px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.MainBanner__contant span {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 286px;
+    padding-top: 15px;
+}
+
+.MainBanner__button {
+    width: 160px;
+    height: 50px;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.MainBanner__image {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 455px;
+    height: 240px;
+    background: url('../images/MainBanner_bg_item.png');
+}
+
+
+@media all and (max-width: 1460px) {
+    .MainBanner {
+        width: 400px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .MainBanner__shell {
+        width: 400px;
+    }
+
+    .MainBanner__contant {
+        width: 400px;
+    }
+
+    .MainBanner__caption {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .MainBanner__contant span {
+        font-size: 10px;
+        z-index: 3;
+    }
+
+    .MainBanner__image {
+        width: 400px;
+        left: 0;
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position-x: 150px;
+        background-position-y: 80px;
+    }
+}
